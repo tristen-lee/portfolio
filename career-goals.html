@@ -3,23 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Career Goals</title>
+    <title>Tristen Lee — Career Goals</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <header>
-      <h1>Career Goals</h1>
+      <h1>Tristen Lee</h1>
       <nav>
-        <a href="index.html">Back to Home</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="cover-letter.html">Cover Letter</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
 
+      <section id="goals-hero" style="background-image: url('assets/hero_image.png');">
+        <h2>Career Goals</h2>
+      </section>
+
+      <section id="video-intro">
+        <h2>Intro Video</h2>
+            <video controls style=" border-color: black; border-size: height: 400px; width: 300px; display: block; margin: 0 auto;">
+                <source src="assets/career_goals.mp4" type="video/mp4" />
+                Your browser does not support the video element.
+            </video>
+      </section>
+
+      <section id="audio-section">
+        <h2>Play this while you read!</h2>
+            <audio controls preload="none">
+                <source src="assets/background_music.wav" type="audio/wav" />
+                Your browser does not support the audio element.
+            </audio>
+      </section>
+
+      <section id="goals">
+        <h2>Where I'm Headed</h2>
+        <img src="assets/kylee-and-me-at-Glass-Butte.png" alt="Tristen at Glass Butte" style="max-width: 300px; display: block; margin: 0 auto 20px auto; border-radius: 8px;" />
+            <p>
+            I am still figuring it out, and I think that's okay. Right now I am exploring different programming
+            languages to find the ones that click for me. What I know for sure is that I genuinely
+            <strong>love building apps.</strong> It is fun, it is creative, and every time I learn something new
+            I want to keep going.
+            </p>
+            <p>
+            Data and analytics have been a big pull for me. Working with data in my Python mood tracker opened
+            my eyes to how powerful it can be. Visualizing patterns, finding meaning in numbers. I want to
+            go deeper there.
+            </p>
+            <p>
+            I also have a background in video game development and want to revisit it. Indie dev is a grind,
+            but the idea of building something people actually <em>play</em> still excites me.
+            </p>
+            <p>
+            Whatever I build, I want it to be <strong>accessible</strong> and up to standard, usable by everyone.
+            That matters to me personally and I plan to carry it into everything I make.
+            </p>
+      </section>
+
+      <section id="contact-form">
+        <h2>Get in Touch</h2>
+            <p>Interested in working together? Fill out the form below and I'll get back to you.</p>
+
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required />
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required />
+
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="company" />
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <fieldset>
+                <legend>Best Contact Time</legend>
+                <label><input type="radio" name="contact-time" value="am" /> A.M.</label>
+                <label><input type="radio" name="contact-time" value="pm" /> P.M.</label>
+                <label><input type="radio" name="contact-time" value="anytime" /> Anytime</label>
+            </fieldset>
+
+            <label for="contact-method">Preferred Contact Method</label>
+            <select id="contact-method" name="contact-method">
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+                <option value="text">Text</option>
+            </select>
+
+            <button type="submit">Submit</button>
+
+            </form>
+      </section>
+
     </main>
 
     <footer>
-
+      <p>&copy; 2025 Tristen Lee</p>
     </footer>
 
     <script src="script.js"></script>

@@ -3,25 +3,194 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume</title>
+    <title>Tristen Lee — Resume</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <header>
-      <h1>Resume</h1>
+      <h1>Tristen Lee</h1>
       <nav>
-        <a href="index.html">Back to Home</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cover-letter.html">Cover Letter</a></li>
+          <li><a href="career-goals.html">Career Goals</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
+        <section id="resume-hero" style="background-image: url('assets/hero_image.png');">
+            <h2>My Resume</h2>
+        </section>
+
+      <div id="current-date"></div>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <hr />
+        <p>
+          <span class="label">Location:</span> Clatskanie, OR<br />
+          <span class="label">Phone:</span> (360) 218-1298<br />
+          <span class="label">GitHub:</span> <a href="https://github.com/tristen-lee" target="_blank">github.com/tristen-lee</a>
+        </p>
+      </section>
+
+      <section id="summary">
+        <h2>Summary</h2>
+        <hr />
+        <p>
+          Software engineering student at <strong>Western Governors University</strong> building real-world Python applications,
+          including a clinical mood tracking app for bipolar disorder. Background in digital marketing and client-facing roles,
+          comfortable with technical tools, fast onboarding, and communicating clearly with non-technical people.
+          Seeking remote bridge roles in <em>technical support, customer success, or SaaS implementation.</em>
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2>Core Skills</h2>
+        <hr />
+        <table>
+          <caption>Skills by Category</caption>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Tools &amp; Technologies</th>
+              <th>Application</th>
+              <th>Proficiency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Programming &amp; Tools</td>
+              <td>Python, JSON, Git/GitHub, CLI, VS Code</td>
+              <td>App development, version control</td>
+              <td><em>Intermediate</em></td>
+            </tr>
+            <tr>
+              <td>Web &amp; Design</td>
+              <td>WordPress, Elementor Pro, Wix, Figma, Canva</td>
+              <td>Client websites, branding</td>
+              <td><em>Advanced</em></td>
+            </tr>
+            <tr>
+              <td>Analytics &amp; Marketing</td>
+              <td>Google Ads, Meta Ads, Google Analytics, SEO</td>
+              <td>Ad campaigns, lead generation</td>
+              <td><em>Advanced</em></td>
+            </tr>
+            <tr>
+              <td>Other Tools</td>
+              <td>11Labs, Thryv CRM, Adobe Illustrator, Google Suite</td>
+              <td>Client strategy, copywriting</td>
+              <td><em>Intermediate</em></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <hr />
+        <article>
+          <h3>Cairn: Bipolar Mood Tracker <span class="tag">Python CLI App</span></h3>
+          <p><a href="https://github.com/tristen-lee/Mood-Tracker" target="_blank">View on GitHub</a></p>
+          <ul>
+            <li>Built a modular Python CLI app with 11-field daily logging tailored for bipolar disorder, including mania, psychosis, mixed state detection, and composite mood scoring across 5 clinical states</li>
+            <li>Designed a weighted composite scoring algorithm factoring sleep deprivation, energy, and symptom combinations</li>
+            <li>Implemented 5 data visualizations using <strong>matplotlib</strong> and <strong>seaborn</strong>: mood over time, sleep correlation, and mood state distribution</li>
+            <li>Features include streak tracking, date range filtering, and CSV export framed as a therapist-shareable report</li>
+            <li>Modular structure across <code>core/</code> and <code>storage/</code> with JSON persistence and absolute path handling</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <hr />
+
+        <article>
+          <h3>Founder &amp; Digital Marketing Specialist</h3>
+          <h4>AttiStrategy (Freelance · Clatskanie, OR) <span class="date">Feb 2025 to Present</span></h4>
+          <ul>
+            <li>Build and manage conversion-focused WordPress websites for local businesses using Elementor Pro</li>
+            <li>Run targeted ad campaigns on Google, Meta, and Spotify, tailored for small business budgets</li>
+            <li>Develop brand strategy, messaging, and graphics using Canva, Adobe Illustrator, and client interviews</li>
+            <li>Currently manage <strong>5 active clients</strong>, handling full-cycle marketing from discovery to delivery</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Marketing Manager</h3>
+          <h4>Apex Care Solutions (Remote) <span class="date">Oct 2024 — Feb 2025</span></h4>
+          <ul>
+            <li>Audited and rebuilt ad strategy for a healthcare company from scratch</li>
+            <li>Designed branded marketing materials and managed digital outreach</li>
+            <li>Tools: Wix, Meta Ads Manager, Tag Manager, Google Analytics, Figma, Canva</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Sales &amp; Marketing Associate</h3>
+          <h4>Proust Marketing (Longview, WA) <span class="date">Aug 2024 — Oct 2024</span></h4>
+          <ul>
+            <li>Designed and deployed marketing campaigns for regional clients</li>
+            <li>Used Adobe Suite, WordPress, and Spotify Ads to increase brand awareness</li>
+            <li>Presented creative strategies to clients across various industries</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Sales Associate</h3>
+          <h4>GNC (Longview, WA) <span class="date">Sept 2023 — July 2024</span></h4>
+          <ul>
+            <li>Built strong customer relationships and increased upsell conversion rates</li>
+            <li>Delivered consistent monthly sales growth through knowledge-based recommendations</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Certified Nursing Assistant</h3>
+          <h4>Beacon Hill Rehabilitation (Longview, WA) <span class="date">Apr 2021 — May 2023</span></h4>
+          <ul>
+            <li>Provided direct patient care and emotional support under high-pressure conditions</li>
+            <li>Maintained accuracy and professionalism during the height of the <em>COVID-19 pandemic</em></li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <hr />
+        <h3>Western Governors University</h3>
+        <p>B.S. Software Engineering — <em>In Progress</em> (started Nov 2025)</p>
+        <br />
+        <h3>Clatskanie High School</h3>
+        <p>Diploma, June 2017 · GPA: <strong>3.6</strong></p>
+      </section>
+
+      <section id="additional">
+        <h2>Additional</h2>
+        <hr />
+        <ol>
+          <li><strong>Founder: Christopher's Corner</strong> — support group for families of children with disabilities</li>
+          <li><strong>Member: Clatskanie Belonging Committee</strong> — fostering inclusivity for children, families, and staff of the Clatskanie School District</li>
+        </ol>
+      </section>
 
     </main>
 
     <footer>
-
+      <p>&copy; 2025 Tristen Lee</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+      const dateDiv = document.getElementById("current-date");
+      const today = new Date();
+      dateDiv.textContent = "Last updated: " + today.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+
+      console.log("Tristen Lee's portfolio resume loaded successfully.");
+    </script>
+
   </body>
 </html>
